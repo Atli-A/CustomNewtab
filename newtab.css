@@ -1,0 +1,124 @@
+* {
+    font-family: 'open sans', arial, sans-serif;
+    margin: none;
+    padding: none;
+}
+
+body {
+    margin: none;
+    text-align: center;
+    width: 100%;
+    background-image: linear-gradient(100deg, #222, #333);
+    color: white;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: comfortaa;
+}
+
+@font-face {
+    font-family: 'comfortaa';
+    src: url('fonts/Comfortaa/static/Comfortaa-Light.ttf');
+}
+
+h1 {
+    margin: 20px;
+    font-family: comfortaa;
+    font-weight: 100;
+    font-size: 70px;
+}
+
+@keyframes yeet {
+    0% {
+        padding: 75px;
+        margin-top: 60px;
+    }
+    100% {
+        padding: 125px;
+        margin-top: 0px;
+    }
+}
+
+#name_area {
+    border-radius: 50%;
+    /* padding: 100px; */
+    margin: auto;
+    border: 1px solid #fff;
+    animation-name: yeet;
+    animation-duration: 2s;
+    animation-timing-function: easer;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    text-align: center;
+    width: 200px !important;
+    height: 200px !important;
+}
+
+a {
+    font-family: comfortaa;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 0px solid white;
+}
+
+a:hover {
+    border-bottom: 5px solid white;
+    transition: all;
+    transition-duration: 0.1s;
+}
+
+tr {
+    width: 100%;
+}
+
+#replacementSearchBar {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    min-width: 300px;
+    background-color: #00000000;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    font-family: comfortaa;
+    outline: none;
+}
+
+#clock {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 60px;
+    margin-bottom: none;
+    font-family: inherit;
+    height: 50px;
+    width: 270px;
+    text-align: left;
+}
+
+#Seconds {
+    font-size: 50px;
+    font-family: inherit;
+}
+
+
+#Milliseconds {
+    font-size: 40px;
+    font-family: inherit;
+    width: 140px;
+}
+
+
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-results-button, input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
