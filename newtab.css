@@ -64,11 +64,25 @@ a {
     border: none;
     border-bottom: 0px solid white;
 }
-
-a:hover {
-    border-bottom: 5px solid white;
+.underline{
+    height: 5px;
+    border: none;
+    background-color: white;
+    width: 0%;
     transition: all;
-    transition-duration: 0.1s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    margin:auto;
+}
+a:hover + .underline{
+    height: 5px;
+    width: 100%;
+    border: 0px solid white; 
+    margin:auto;
+    border-radius: 50px;
+    transition: all;
+    transition-timing-function: ease;
+    transition-duration: 0.3s;
 }
 
 tr {
