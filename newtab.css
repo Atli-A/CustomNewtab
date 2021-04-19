@@ -139,7 +139,7 @@ th {
 
 @keyframes sin-wave {
     from {top: calc(40% - 12vw); }
-    to {top: calc(40% - 12vw - 5vw);}
+    to {top: calc(40% - 12vw - 5vh);}
 
 }
 #Title {
