@@ -1,3 +1,9 @@
+:root { 
+    --height-sin: 0px;
+    --scaled-height: 0px;
+}
+
+
 * {
     font-family: 'open sans', arial, sans-serif;
     margin: none;
@@ -14,6 +20,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: comfortaa;
+    min-width: 500px;
 }
 
 #main {
@@ -50,7 +57,7 @@ h1 {
     border: 1px solid #fff;
     animation-name: yeet;
     animation-duration: 2s;
-    animation-timing-function: easer;
+    animation-timing-function: ease;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     text-align: center;
@@ -62,18 +69,19 @@ a {
     font-family: comfortaa;
     color: white;
     text-decoration: none;
-    font-size: 1vw;
+    font-size: calc(12px + 0.8vw);
     padding: 0.4vw;
     padding-bottom: 5px;
     border: none;
     border-bottom: 0px solid white;
 }
 #link-box {
+    margin-right: 0.1vw;
     margin-left: none;
     display: inline-block;
 }
 .underline{
-    height: 5px;
+    height: 0.1vw;
     border: none;
     background-color: white;
     width: 0%;
@@ -83,8 +91,7 @@ a {
     margin:auto;
 }
 a:hover + .underline{
-    height: 5px;
-    width: 80%;
+    width: 85%;
     border: 0px solid white; 
     margin:auto;
     border-radius: 50px;
@@ -100,14 +107,23 @@ tr {
 th {
 
 }
-#replacementSearchBar {
+#search {
+
+    
     position: absolute;
     top: 40%;
     left: 25%;
     width: 50%;
     min-width: 150px;
     background-color: #00000000;
-    border: 1.5px solid white;
+}
+#replacementSearchBar {
+    background-color: #00000000;
+    width: 100%;
+    border: solid;
+    border-color: rgba(255, 255,  255, 1);
+    box-shadow: 0 0 1px 0px white inset, 0 0 1px 0px white; 
+    border-width: 1px;
     border-radius: 25px;
     padding: 10px;
     padding-right: 20px;
@@ -120,19 +136,30 @@ th {
     outline: none;
 }
 
+
+@keyframes sin-wave {
+    from {top: calc(40% - 12vw); }
+    to {top: calc(40% - 12vw - 5vw);}
+
+}
 #Title {
     position: absolute;
-    top: 25%;
+    top: calc(40% - 12vw);
     width: 100%;
     margin: none;
     padding: none;
     font-size: 5vw;
     text-align: center;
     font-family: inherit;
+    animation-name: sin-wave;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #clock {
     border-top: 1px solid white;
+    box-shadow: 0 0 1px 0px white inset, 0 0 1px 0px white; 
     border-left: 1px solid white;
     border-top-left-radius: 25px;
     padding-top: 40px;
@@ -150,13 +177,13 @@ th {
 }
 
 #Seconds {
-    font-size: 50px;
+    font-size: 75%;
     font-family: inherit;
 }
 
 
 #Milliseconds {
-    font-size: 40px;
+    font-size: 55%;
     font-family: inherit;
     width: 140px;
 }
