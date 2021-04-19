@@ -1,2 +1,5 @@
-# webCustomizer
-A chrome extension that adds small conveniences to the web
+# CustomNewtab
+
+Just a extensino I made to customize the chrome newtab page for my convenience.
+
+unfinished
