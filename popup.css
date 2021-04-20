@@ -1,5 +1,5 @@
 body {
-	width: 400px !important;
+	width: 800px !important;
 	margin: none;
 	text-align: center;
 	width: 100%;
@@ -12,6 +12,7 @@ body {
 	min-width: 500px;
 	height: 400px !important;
 	padding: 1px;
+	text-align: left;
 }
 
 @font-face {
@@ -35,10 +36,14 @@ input[type="text"]{
 	padding-right: 5px;
 	padding-left: 15px;
 	height: 20px;
-	font-size: 20px;
+	font-size: 10px;
 	color: white;
 	font-family: comfortaa;
 	outline: none;
+}
+
+#popupTitle {
+	font-size: 20px;
 }
 
     
