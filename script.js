@@ -9,25 +9,6 @@ function updateAll() {
         + "<span id='Milliseconds'>" + ":" + String(d.getMilliseconds()).substr(0, 1) + "</span>"
 
 
-let y = document.title;
-    switch(count % 8) {
-	case 0:
-	    y = "|"
-	case 1:
-	    y = "/"
-	case 2:
-	    y = "-"
-	case 3:
-	    y = "\\"
-	case 4:
-	    y = "|"
-	case 5:
-	    y = "/"
-	case 6:
-	    y = "-"
-	case 7:
-	    y = "\\"
-     }
 }
 
 document.getElementById("replacementSearchBar").onkeypress = function (e) {
@@ -40,4 +21,7 @@ document.getElementById("replacementSearchBar").onkeypress = function (e) {
 }
 
 
-
+chrome.storage.sync.get(["titleText"], function(items) {
+	document.getElementById("Title").innerHTML = items["titleText"]
+	console.log(items["titleText"])
+})
