@@ -27,6 +27,13 @@ document.getElementById("popupTitle").onkeypress = function(e) { // for any keyp
 		chrome.storage.sync.set({"titleText":document.getElementById("popupTitle").value}, function() {
 			
 		});
+		chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+			if (tabs[0].title == "New Tab") {
+					chrome.tabs.update(tabs[0].id, {url: tabs[0].url});
+					console.log("trying to reload")
+			}
+			console.log(tabs[0].title)
+		});
 		window.close()
 	}
 }
