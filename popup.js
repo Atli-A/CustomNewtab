@@ -12,7 +12,8 @@ let shorthands_div = document.getElementById("shorthand")
 let links_div = document.getElementById("links")
 for (let i = 0; i < links.length; i++) {
 	// shorthands_div.appendChild(document.createElement("input", {}));
-	shorthands_div.innerHTML += '<input name="title" type="text"></input>'
+	shorthands_div.innerHTML +="label" + i + ' <input name="title" type="text"></input>'
+	links_div.innerHTML +="link" + i + ' <input name="title" class="wide" type="text"></input>'
 }
 
 titleVal = chrome.storage.sync.get(["titleText"], function(items) { // set value of input to what it already is
