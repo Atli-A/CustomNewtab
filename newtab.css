@@ -23,6 +23,10 @@ body {
     min-width: 500px;
 }
 
+.hide {
+	display: none;
+}
+
 #main {
     padding: 0px;
 	max-width: 100%;
