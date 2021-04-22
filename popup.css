@@ -27,7 +27,7 @@ label {
 }
 input[type="text"]{
 	background-color: #00000000;
-        display: inline-block;
+    display: inline-block;
 	border: solid;
 	border-color: rgba(255, 255,  255, 1);
 	box-shadow: 0 0 1px 0px white inset, 0 0 1px 0px white;
@@ -40,8 +40,8 @@ input[type="text"]{
 	color: white;
 	font-family: comfortaa;
 	outline: none;
-        margin-top:5px;
-        width: 50px;
+   	margin-top:5px;
+   	width: 50px;
 }
 .wide {
     width: 200px;
