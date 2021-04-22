@@ -83,6 +83,7 @@ document.getElementById("popupTitle").onkeypress = function(e) { // for any keyp
 
 
 
+chrome.storage.sync.set({"showClock":true}, function() { });
 
 
 
